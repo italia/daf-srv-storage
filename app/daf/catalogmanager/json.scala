@@ -49,7 +49,7 @@ case class SourceSftp(name: String, url: Option[String], username: Option[String
 // Info for the ingestion source of type pulling a service, that is we make a call to the specified url
 case class SourceSrvPull(name: String, url: String, username: Option[String], password: Option[String], access_token: Option[String], param: Option[String])
 case class StorageInfo(hdfs: Option[StorageHdfs])
-case class StorageHdfs(name: String, param: Option[String], path: Option[String])
+case class StorageHdfs(name: String, path: Option[String], param: Option[String])
 case class SourceSrvPush(name: String, url: String, username: Option[String], password: Option[String], access_token: Option[String], param: Option[String])
 case class StdSchema(std_uri: String, fields_conv: List[ConversionField])
 case class ConversionSchema(fields_conv: List[ConversionField], fields_custom: Option[List[CustomField]])

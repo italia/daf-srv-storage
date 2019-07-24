@@ -10,7 +10,7 @@ let config =  /usr/local/var/dhall-kubernetes/api/Deployment/default
                   ⫽ /env/nexus
                   ⫽ { name = "storage-manager"
                     , imageName = "daf-storage-manager"
-                    , imageTag = "1.0.6.8"
+                    , imageTag = "1.0.6.9"
                     , port = [ 9000 ] : Optional Natural
                     , mounts = ./volumeMounts
                     , simpleEnvVars = [ { mapKey = "JAVA_OPTS", mapValue = "-server -XX:+UseG1GC -XX:MaxGCPauseMillis=100 -XX:+PerfDisableSharedMem -XX:+ParallelRefProcEnabled -Xmx2g -Xms2g -XX:MaxPermSize=1024m" } ]
